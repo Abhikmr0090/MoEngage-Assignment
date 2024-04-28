@@ -20,6 +20,9 @@ fun loadImageIntoView(imageView : ImageView,url : String?) {
     }
 }
 
+/**
+ * This function is used handle null values
+ **/
 @BindingAdapter("setText")
 fun setText(textView: TextView,text : String?) {
     textView.text = text ?: "N/A"
