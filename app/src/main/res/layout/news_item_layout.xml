@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="newsModel"
+            type="com.example.moengageassignment.ui.homepage.models.NewsArticlesModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="6dp">
+
+
+            <ImageView
+                android:id="@+id/newsArticleImg"
+                loadImageIntoView="@{newsModel.urlToImage}"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:scaleType="center"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtHeadline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:fontFamily="@font/popping_bold"
+                android:padding="2dp"
+                setText="@{newsModel.title}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/newsArticleImg"
+                tools:text="Is this what an early-stage slowdown looks like?" />
+
+            <TextView
+                android:id="@+id/txtSource"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@{newsModel.source.name != null ? `Source : ` + newsModel.source.name : `Source : N/A` }"
+                tools:text="Source"
+                android:textSize="12sp"
+                android:layout_marginStart="2dp"
+                android:textAlignment="textStart"
+                android:fontFamily="@font/poppins_regular"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtHeadline"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/newsDescription"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppins_regular"
+                android:maxLines="3"
+                android:paddingHorizontal="3dp"
+                setText="@{newsModel.description}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtSource"
+                tools:text="Hello and welcome back to our regular morning look at private companies, public markets and the gray space in between. Today we’re exploring some fascinating data from Silicon Valley Bank markets report for Q1 2020. We’re digging into two charts that deal wit…" />
+
+            <TextView
+                android:id="@+id/txtAuthor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:padding="2dp"
+                tools:text="Author : Pushpender"
+                setText="@{newsModel.author != null ? `Author : ` + newsModel.author : `Author : N/A`}"
+                android:textSize="12sp"
+                app:layout_constraintEnd_toStartOf="@+id/publishedAt"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/newsDescription"
+                 />
+
+            <TextView
+                android:id="@+id/publishedAt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="20-12-1998"
+                android:textSize="12sp"
+                android:padding="2dp"
+                parseDateAndTime="@{newsModel.publishedAt}"
+                android:fontFamily="@font/poppins_medium"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtAuthor"
+                app:layout_constraintTop_toBottomOf="@+id/newsDescription" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
