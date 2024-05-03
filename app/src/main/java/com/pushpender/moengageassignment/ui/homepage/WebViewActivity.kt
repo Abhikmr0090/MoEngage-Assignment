@@ -1,4 +1,4 @@
-package com.example.moengageassignment.ui.homepage
+package com.pushpender.moengageassignment.ui.homepage
 
 import android.annotation.SuppressLint
 import android.graphics.Bitmap
@@ -7,10 +7,10 @@ import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
-import com.example.moengageassignment.R
-import com.example.moengageassignment.databinding.ActivityWebViewBinding
-import com.example.moengageassignment.makeGone
-import com.example.moengageassignment.makeVisible
+import com.pushpender.moengageassignment.R
+import com.pushpender.moengageassignment.databinding.ActivityWebViewBinding
+import com.pushpender.moengageassignment.makeGone
+import com.pushpender.moengageassignment.makeVisible
 
 const val KEY_NEWS_URL = "news_url"
 

@@ -7,7 +7,7 @@
 
         <variable
             name="newsModel"
-            type="com.example.moengageassignment.ui.homepage.models.NewsArticlesModel" />
+            type="com.pushpender.moengageassignment.ui.homepage.models.NewsArticlesModel" />
     </data>
 
     <androidx.cardview.widget.CardView

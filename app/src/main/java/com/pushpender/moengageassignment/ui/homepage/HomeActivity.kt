@@ -1,4 +1,4 @@
-package com.example.moengageassignment.ui.homepage
+package com.pushpender.moengageassignment.ui.homepage
 
 import android.content.Intent
 import android.graphics.Typeface
@@ -14,17 +14,17 @@ import androidx.core.view.isVisible
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.moengageassignment.R
-import com.example.moengageassignment.SortOptions
-import com.example.moengageassignment.databinding.ActivityHomeBinding
-import com.example.moengageassignment.makeGone
-import com.example.moengageassignment.makeVisible
-import com.example.moengageassignment.network.ApiResult
-import com.example.moengageassignment.parseDate
-import com.example.moengageassignment.ui.ViewModelFactory
-import com.example.moengageassignment.ui.homepage.models.NewsArticlesModel
-import com.example.moengageassignment.ui.homepage.repository.NewsRepository
-import com.example.moengageassignment.ui.homepage.viewmodels.NewsViewModel
+import com.pushpender.moengageassignment.R
+import com.pushpender.moengageassignment.SortOptions
+import com.pushpender.moengageassignment.databinding.ActivityHomeBinding
+import com.pushpender.moengageassignment.makeGone
+import com.pushpender.moengageassignment.makeVisible
+import com.pushpender.moengageassignment.network.ApiResult
+import com.pushpender.moengageassignment.parseDate
+import com.pushpender.moengageassignment.ui.ViewModelFactory
+import com.pushpender.moengageassignment.ui.homepage.models.NewsArticlesModel
+import com.pushpender.moengageassignment.ui.homepage.repository.NewsRepository
+import com.pushpender.moengageassignment.ui.homepage.viewmodels.NewsViewModel
 import com.google.android.material.chip.Chip
 import com.google.firebase.messaging.FirebaseMessaging
 

@@ -1,12 +1,12 @@
-package com.example.moengageassignment.ui.homepage.viewmodels
+package com.pushpender.moengageassignment.ui.homepage.viewmodels
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.moengageassignment.network.ApiResult
-import com.example.moengageassignment.ui.homepage.models.ArticlesModel
-import com.example.moengageassignment.ui.homepage.repository.NewsRepository
+import com.pushpender.moengageassignment.network.ApiResult
+import com.pushpender.moengageassignment.ui.homepage.models.ArticlesModel
+import com.pushpender.moengageassignment.ui.homepage.repository.NewsRepository
 import kotlinx.coroutines.launch
 
 class NewsViewModel(private val newsRepository: NewsRepository) : ViewModel() {

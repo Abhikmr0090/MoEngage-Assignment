@@ -1,13 +1,13 @@
-package com.example.moengageassignment.ui.homepage
+package com.pushpender.moengageassignment.ui.homepage
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.Adapter
-import com.example.moengageassignment.R
-import com.example.moengageassignment.databinding.NewsItemLayoutBinding
-import com.example.moengageassignment.ui.homepage.models.NewsArticlesModel
+import com.pushpender.moengageassignment.R
+import com.pushpender.moengageassignment.databinding.NewsItemLayoutBinding
+import com.pushpender.moengageassignment.ui.homepage.models.NewsArticlesModel
 
 class NewsAdapter(
     private val newsList: List<NewsArticlesModel>,

@@ -1,6 +1,6 @@
-package com.example.moengageassignment.network
+package com.pushpender.moengageassignment.network
 
-import com.example.moengageassignment.BuildConfig
+import com.pushpender.moengageassignment.BuildConfig
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.coroutines.Dispatchers

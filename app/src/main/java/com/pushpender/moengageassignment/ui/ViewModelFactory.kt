@@ -1,9 +1,9 @@
-package com.example.moengageassignment.ui
+package com.pushpender.moengageassignment.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.moengageassignment.ui.homepage.repository.NewsRepository
-import com.example.moengageassignment.ui.homepage.viewmodels.NewsViewModel
+import com.pushpender.moengageassignment.ui.homepage.repository.NewsRepository
+import com.pushpender.moengageassignment.ui.homepage.viewmodels.NewsViewModel
 
 class ViewModelFactory(private val repository: NewsRepository) : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {

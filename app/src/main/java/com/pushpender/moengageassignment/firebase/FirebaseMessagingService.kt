@@ -1,4 +1,4 @@
-package com.example.moengageassignment.firebase
+package com.pushpender.moengageassignment.firebase
 
 import android.app.NotificationChannel
 import android.app.NotificationManager

@@ -1,4 +1,4 @@
-package com.example.moengageassignment
+package com.pushpender.moengageassignment
 
 import org.junit.Test
 

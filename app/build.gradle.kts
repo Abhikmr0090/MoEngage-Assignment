@@ -7,11 +7,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.moengageassignment"
+    namespace = "com.pushpender.moengageassignment"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.moengageassignment"
+        applicationId = "com.pushpender.moengageassignment"
         minSdk = 21
         targetSdk = 33
         versionCode = 1

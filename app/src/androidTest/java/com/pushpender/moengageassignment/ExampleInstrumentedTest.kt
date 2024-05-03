@@ -1,4 +1,4 @@
-package com.example.moengageassignment
+package com.pushpender.moengageassignment
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

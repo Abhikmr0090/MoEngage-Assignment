@@ -1,4 +1,4 @@
-package com.example.moengageassignment.ui.homepage.models
+package com.pushpender.moengageassignment.ui.homepage.models
 
 
 data class ArticlesModel(
